@@ -1,0 +1,8 @@
+name: continuous-integration
+on: 
+    pull_request: 
+        branches: main
+
+jobs:
+    get-changes:
+        uses: ./github/
