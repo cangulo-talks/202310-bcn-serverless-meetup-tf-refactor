@@ -1,13 +1,13 @@
 # aws_account_id = "" # set through env vars 
-stage         = "prd"
+stage         = "tst"
 service_group = "main"
-client        = "arepabank"
+client        = "tacobank"
 
 payments = {
   enabled = true
 }
 crm = {
-  enabled = false
+  enabled = true
 }
 transactions = {
   enabled = false
