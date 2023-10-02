@@ -1,14 +1,16 @@
-name: 👮‍♂️ continuous-integration
+
+name: 🚀 continuous-delivery
 
 on:
-  pull_request:
-    branches: [main]
+  push:
+    branches:
+      - main
 
 jobs:
-  tfm-plan:
+  tfm-apply:
     name: 📃 Plan All workspaces
     uses: ./.github/workflows/shared-tf-apply.yml
     with:
       workspaces: "['tst/arepabank', 'acc/arepabank', 'prd/arepabank']"
-      apply: false
+      apply: true
     secrets: inherit
