@@ -2,7 +2,7 @@
 marp: true
 theme: uncover
 paginate: true
-header: Refactoring hundred of environments with terraform - Carlos Angulo
+header: Refactoring hundred of environments with TF - Carlos Angulo
 footer: Serverless Barcelona Meetup
 ---
 
@@ -10,14 +10,13 @@ footer: Serverless Barcelona Meetup
 _class: invert
 -->
 
-# **Refactoring hundred of environments with terraform**
+# **Refactoring 💯 of environments with TF**
 
 1. **About me**
 2. **Goal**
 3. **Problem**
 4. **What do we need?**
 5. **Our solution**
-6. **Questions**
 
 ![bg opacity:25%](https://secure.meetupstatic.com/photos/event/c/1/9/4/600_478429556.jpeg)
 
@@ -27,11 +26,11 @@ _class: invert
 # **About me**
 
 - I am Carlos Angulo
-- I work at [Ohpen](https://www.ohpen.com)
-- I have more than 7 years of experience. Last years as a Platform Engineer
-- You can follow me on LinkedIn or GitHub(cangulo)
+- I work at [Ohpen](https://www.ohpen.com) as a Platform Engineer
+- I have more than 7 years of experience
+- You can find me on [LinkedIn](www.linkedin.com/in/angulomascarell) or [GitHub](https://github.com/cangulo)
 
-![bg right:30% w:60% ](assets/imgs/ohpen-logo.jpg)
+![bg right:30% w:60% vertical](assets/imgs/profile_medium.png)
 ![bg right:30% w:60% vertical](assets/imgs/linkedin-qr-code.jpeg)
 
 ---
@@ -42,7 +41,6 @@ We want to refactor and simplify a terraform solution. _How would you tackle thi
 
 **demo time🧑‍💻**
 
-<!-- TODO: add screenshot of terraform code -->
 ![bg right:40% w:120% ](assets/imgs/initial-lambdas-code.png)
 
 ---
