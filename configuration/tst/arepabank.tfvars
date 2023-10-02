@@ -4,11 +4,11 @@ service_group = "main"
 client        = "arepabank"
 
 payments = {
-  enabled = false
+  enabled = true
 }
 crm = {
-  enabled = true
+  enabled = false
 }
 transactions = {
-  enabled = true
+  enabled = false
 }
