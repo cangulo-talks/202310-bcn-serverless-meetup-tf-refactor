@@ -12,10 +12,12 @@ _class: invert
 
 # **Refactoring hundred of environments with terraform**
 
-1. **Introduction**
-2. **Demo with Terraform**
-3. **Is it worth it?**
-4. **LocalStack PRO**
+1. **About me**
+2. **Goal**
+3. **Problem**
+4. **What do we need?**
+5. **Our solution**
+6. **Questions**
 
 ![bg opacity:25%](https://secure.meetupstatic.com/photos/event/c/1/9/4/600_478429556.jpeg)
 
@@ -38,7 +40,10 @@ _class: invert
 
 We want to refactor and simplify a terraform solution. _How would you tackle this ? 🤔_
 
+**demo time🧑‍💻**
+
 <!-- TODO: add screenshot of terraform code -->
+![bg right:40% w:120% ](assets/imgs/initial-lambdas-code.png)
 
 ---
 
@@ -47,25 +52,28 @@ We want to refactor and simplify a terraform solution. _How would you tackle thi
 * We edit the code and we perform a terraform plan to ensure our changes do what we expect. 📜
 * If we have 3 environments, we check 3 terraform plans. But, what if we have hundreds of environments? 💯
 
-<!-- TODO: add screenshot of tf plans per stage -->
+![bg right:30% w:80% vertical](assets/imgs/slide-4-problem.png)
 
 ---
 
 # **What do we need?**
 
-- We need to aggregate all the environments changes so it is easy for us to know how our changes affect them
+* We need to aggregate all the environments changes so it is easy for us to know how our changes affect them.
 
-<!-- TODO: add screenshot of tf plans summary -->
+![bg right:30% w:80% vertical](assets/imgs/tf-plan-summary-1.png)
+![bg right:30% w:80% ](assets/imgs/tf-plan-summary-2.png)
+![bg right:30% w:80% ](assets/imgs/tf-plan-summary-3.png)
+![bg right:30% w:80% ](assets/imgs/tf-plan-summary-4.png)
 
 ---
 
 # **Our solution**
 
-- We need to aggregate all the environments changes so it is easy for us to know how our changes affect them
 - We end up creating a open source GH action for it:
   - [terraform-plan-summarize-gh-action](https://github.com/ohpensource/terraform-plan-summarize-gh-action)
 
-<!-- TODO: add screenshot of markdown table with all environment summarized -->
+
+![bg right:40% w:90% vertical](assets/imgs/tf-plan-summary-aggregated.png)
 
 
 ---
