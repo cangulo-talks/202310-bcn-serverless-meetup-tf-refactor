@@ -8,7 +8,7 @@ on:
 
 jobs:
   tfm-apply:
-    name: 📃 Plan All workspaces
+    name: 📃 TF Apply All workspaces
     uses: ./.github/workflows/shared-tf-apply.yml
     with:
       workspaces: "['tst/arepabank', 'acc/arepabank', 'prd/arepabank']"
