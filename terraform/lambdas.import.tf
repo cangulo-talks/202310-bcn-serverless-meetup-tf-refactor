@@ -8,3 +8,7 @@ moved {
   to   = aws_lambda_function.all["transactions"]
 }
 
+moved {
+  from = aws_lambda_function.crm[0]
+  to   = aws_lambda_function.all["crm"]
+}
