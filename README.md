@@ -8,3 +8,6 @@
   * [slides](slides.md)
   * https://marp.app
   * [vs code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+
+
+![Poster Meetup](assets/imgs/poster-meetup-2023.png)
