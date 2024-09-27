@@ -59,3 +59,29 @@ jobs:
           terraform-plan-file: "$TF_FOLDER/tfplan"
           terraform-outputs-file: "$TF_FOLDER/outputs.json"
           backend-config: $TF_FILES_PATH.backend.tfvars
+
+      - name: 🏗️ Build a summary
+        if: ${{ !inputs.destroy-mode }}
+        uses: ohpensource/terraform-plan-summarize-gh-action/summarize@v0.1.3
+        with:
+          json-terraform-plan-file: ${{ env.TF_FOLDER }}/tfplan.json
+          environment: ${{ matrix.workspace }}
+          print-summary: false
+          attach-markdown-summary: false
+          attach-csv-summary: false
+          attach-json-summary: true
+
+  aggregate-plans:
+    runs-on: ubuntu-latest
+    needs: tf
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+      - name: Aggregate results
+        uses: ohpensource/terraform-plan-summarize-gh-action/aggregate@v0.1.3
+        with:
+          print-summary: true
+          attach-markdown-summary: true
+          attach-csv-summary: false
